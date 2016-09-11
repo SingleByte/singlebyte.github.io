@@ -37,7 +37,7 @@
     <link rel="alternate" type="application/rss+xml" title="单字节" href="/atom.xml">
     
 
-    <link rel="canonical" href="http://singlebyte.me"/>
+    <link rel="canonical" href="http://singlebyte.me/2016/09/11/vim-lts/"/>
 
     
 </head>
@@ -50,7 +50,7 @@
     </span>
 
     
-<header class="panel-cover " style="background-image: url(/images/background-cover.jpg)">
+<header class="panel-cover panel-cover--collapsed" style="background-image: url(/images/background-cover.jpg)">
   <div class="panel-main">
     <div class="panel-main__inner panel-inverted">
     <div class="panel-main__content">
@@ -149,56 +149,43 @@
 
     <div class="content-wrapper">
         <div class="content-wrapper__inner">
-            <div class="main-post-list">
-    
-  <ol class="post-list">
-  
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2016/09/11/vim-lts/" title="link to post.title"></a></h2>
-      <p class="excerpt">
-    
-      VIM-LTS
-都说vim是神器，以前都是在服务器上编辑文件用一用，最近闲来，准备坚持使用，看看是否能够真正提升开发效率。这篇文章也会记录这次尝试的。希望一切顺利！
+            <article class="post-container post-container--single">
 
-基础篇环境搭建我是idea的忠实粉丝，就像google抛弃eclipse转向idea一样，优秀是一种气质。
-idea配置vim插件很简单：
-+ plugin里面直接下载IdeaVim
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="2016-09-11T15:15:21.907Z" class="post-list__meta--date date">2016-09-11</time> &#8226; <span class="post-meta__tags tags">于&nbsp;</span>
+    </div>
+    <h1 class="post-title"></h1>
+  </header>
+
+  <section class="post">
+    <h1 id="VIM-LTS"><a href="#VIM-LTS" class="headerlink" title="VIM-LTS"></a>VIM-LTS</h1><blockquote>
+<p>都说vim是神器，以前都是在服务器上编辑文件用一用，最近闲来，准备坚持使用，看看是否能够真正提升开发效率。这篇文章也会记录这次尝试的。希望一切顺利！</p>
+</blockquote>
+<h2 id="基础篇"><a href="#基础篇" class="headerlink" title="基础篇"></a>基础篇</h2><h3 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h3><p>我是idea的忠实粉丝，就像google抛弃eclipse转向idea一样，优秀是一种气质。</p>
+<p>idea配置vim插件很简单：</p>
+<pre><code>+ plugin里面直接下载IdeaVim
 + 重启idea
 + 默认 ctrl+alt+v 开关
-开启我们的vim旅程吧….
-vim模式+ insert模式
+</code></pre><p>开启我们的vim旅程吧….</p>
+<h3 id="vim模式"><a href="#vim模式" class="headerlink" title="vim模式"></a>vim模式</h3><pre><code>+ insert模式
 + normal模式
-5个基本命
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2016-09-11T15:15:21.907Z" class="post-list__meta--date date">2016-09-11</time> &#8226; <span class="post-list__meta--tags tags">于&nbsp;</span><a class="btn-border-small" href="/2016/09/11/vim-lts/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2016/09/03/我的歌/" title="link to post.title"></a></h2>
-      <p class="excerpt">
-    
-      你说我世上最坚强,我说你世上最善良
-花房姑娘，一无所有
+</code></pre><h3 id="5个基本命令切记"><a href="#5个基本命令切记" class="headerlink" title="5个基本命令切记"></a>5个基本命令切记</h3><pre><code>+ i     进入insert模式，esc切入命令模式  
++ x     删除光标所在的那一个字符
++ ：wq   保存退出
++ dd    删除当前行，并且存入剪切板
++ p     粘贴剪贴板的内容
+</code></pre><blockquote>
+<p> 熟记方向键减少右手活动范围:hjkl   (←↓↑→)  </p>
+</blockquote>
+<h2 id="进阶篇"><a href="#进阶篇" class="headerlink" title="进阶篇"></a>进阶篇</h2><h3 id="高级进入insert模式"><a href="#高级进入insert模式" class="headerlink" title="高级进入insert模式"></a>高级进入insert模式</h3><pre><code>+ a     在光标后插入（本人现在还未使用过，感觉相对于i来说的）
++ o     在当前行后插入新的一行（就是回车换行进入insert模式）
++ O     在当前行前插入新的一行 （水平不够，没用过）
++ cw    把光标所在位置的一个单词删掉进入insert（这个感觉很强大，没用过，以后知道什么场景会用，来更新）
+</code></pre>
+  </section>
 
-
-我对花房姑娘的理解是男人坚强，女人善良！朴实无华你说你喜欢《外面的世界》，喜欢钱钟书的《围城》&amp;nbsp; May you be happy every day ！
-
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2016-09-03T14:31:29.490Z" class="post-list__meta--date date">2016-09-03</time> &#8226; <span class="post-list__meta--tags tags">于&nbsp;</span><a class="btn-border-small" href="/2016/09/03/我的歌/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
-  </ol>
-
-
-
-</div>
+</article>
 
 
 
